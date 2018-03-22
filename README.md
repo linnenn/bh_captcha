@@ -21,7 +21,7 @@ project's `composer.json`.
 {
     "require": {
         "laravel/framework": "5.0.*",
-        "mews/captcha": "~2.0"
+        "linnenn/bh_captcha": "~2.0"
     },
     "minimum-stability": "dev"
 }
@@ -172,7 +172,7 @@ Based on [Intervention Image](https://github.com/Intervention/image)
 ## Links
 * [Intervention Image](https://github.com/Intervention/image)
 * [L5 Captcha on Github](https://github.com/mewebstudio/captcha)
-* [L5 Captcha on Packagist](https://packagist.org/packages/mews/captcha)
+* [L5 Captcha on Packagist](https://packagist.org/packages/linnenn/bh_captcha)
 * [For L4 on Github](https://github.com/mewebstudio/captcha/tree/master-l4)
 * [License](http://www.opensource.org/licenses/mit-license.php)
 * [Laravel website](http://laravel.com)

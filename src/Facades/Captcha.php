@@ -1,6 +1,6 @@
 <?php
 
-namespace Mews\Captcha\Facades;
+namespace Linnenn\Captcha\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
