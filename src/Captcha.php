@@ -21,6 +21,7 @@ use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Str;
 use Intervention\Image\ImageManager;
 use Illuminate\Session\Store as Session;
+use Redis;
 
 /**
  * Class Captcha
@@ -306,7 +307,7 @@ class Captcha
             'key'       => $this->hasher->make($this->sensitive ? $bag : $this->str->lower($bag)),
             'text'      => $bag
         ]);
-
+        Redis::set('captcha_beanhome');
         return $bag;
     }
 
