@@ -1,6 +1,6 @@
 # Captcha for Laravel 5
 
-fork form news\cpatcha
+fork form news\cpatcha thanks anyway
 
 [![Build Status](https://travis-ci.org/mewebstudio/captcha.svg?branch=master)](https://travis-ci.org/mewebstudio/captcha) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mewebstudio/captcha/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mewebstudio/captcha/?branch=master)
 
