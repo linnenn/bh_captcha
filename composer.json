@@ -1,15 +1,15 @@
 {
-	"name": "mews/captcha",
+	"name": "linnenn/bh_captcha",
 	"type": "package",
 	"description": "Laravel 5 Captcha Package",
 	"keywords": ["laravel5 Captcha", "laravel5 Security", "Captcha"],
-	"homepage": "https://github.com/mewebstudio/captcha",
+	"homepage": "https://github.com/linnenn/bh_captcha",
 	"license": "MIT",
 	"authors": [
 		{
-			"name": "Muharrem ERİN",
-			"email": "me@mewebstudio.com",
-			"homepage": "https://github.com/mewebstudio",
+			"name": "linnenn",
+			"email": "linenn@foxmail.com",
+			"homepage": "https://github.com/linnenn",
 			"role": "Developer"
 		}
 	],
