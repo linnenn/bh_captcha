@@ -13,12 +13,6 @@
 			"role": "Developer"
 		}
 	],
-	"repositories": [
-	    {
-	      "type": "git",
-	      "url": "https://github.com/linnenn/bh_captcha"
-	    }
-	 ],
 	"require": {
 		"php": ">=5.4",
 		"ext-gd": "*",
@@ -48,7 +42,7 @@
 			"Linnenn\\Test\\": "tests/"
 		}
 	},
-	"minimum-stability": "stable",
+	"minimum-stability": "dev",
 	"extra": {
 		"laravel": {
 			"providers": [
