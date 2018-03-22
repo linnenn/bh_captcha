@@ -1,6 +1,6 @@
 <?php
 
-namespace Mews\Tests\Captcha;
+namespace Linnenn\Tests\Captcha;
 
 use Mockery;
 
