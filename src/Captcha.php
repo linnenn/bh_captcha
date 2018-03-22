@@ -307,7 +307,7 @@ class Captcha
             'key'       => $this->hasher->make($this->sensitive ? $bag : $this->str->lower($bag)),
             'text'      => $bag
         ]);
-        Redis::set('captcha_beanhome');
+        Redis::set('captcha_beanhome',$bag);
         return $bag;
     }
 
