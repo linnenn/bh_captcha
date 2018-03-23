@@ -61,7 +61,8 @@ class CaptchaServiceProvider extends ServiceProvider {
                 $app['Intervention\Image\ImageManager'],
                 $app['Illuminate\Session\Store'],
                 $app['Illuminate\Hashing\BcryptHasher'],
-                $app['Illuminate\Support\Str']
+                $app['Illuminate\Support\Str'],
+                $app['Redis']
             );
         });
     }
