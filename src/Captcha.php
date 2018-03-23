@@ -21,7 +21,8 @@ use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Str;
 use Intervention\Image\ImageManager;
 use Illuminate\Session\Store as Session;
-use Redis;
+// use Redis;
+use Illuminate\Support\Facades\Redis as Redis;
 
 /**
  * Class Captcha
