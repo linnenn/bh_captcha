@@ -166,6 +166,10 @@ class Captcha
     protected $textLeftPadding = 4;
 
     /**
+     * @var redis
+     */
+    protected $redis;
+    /**
      * Constructor
      *
      * @param Filesystem $files
@@ -183,7 +187,8 @@ class Captcha
         ImageManager $imageManager,
         Session $session,
         Hasher $hasher,
-        Str $str
+        Str $str,
+        Redis $redis
     )
     {
         $this->files = $files;
@@ -192,6 +197,7 @@ class Captcha
         $this->session = $session;
         $this->hasher = $hasher;
         $this->str = $str;
+        $this->redis = $redis;
         $this->characters = config('captcha.characters','2346789abcdefghjmnpqrtuxyzABCDEFGHJMNPQRTUXYZ');
     }
 
@@ -307,7 +313,7 @@ class Captcha
             'key'       => $this->hasher->make($this->sensitive ? $bag : $this->str->lower($bag)),
             'text'      => $bag
         ]);
-        Redis::set('captcha_beanhome',$bag);
+        $this->redis::set('captcha_beanhome',$bag);
         return $bag;
     }
 
