@@ -314,7 +314,7 @@ class Captcha
             'key'       => $this->hasher->make($this->sensitive ? $bag : $this->str->lower($bag)),
             'text'      => $bag
         ]);
-        $this->redis::set('captcha_beanhome',$bag);
+        $this->redis::setex('captcha_beanhome',300,$bag);
         return $bag;
     }
 
